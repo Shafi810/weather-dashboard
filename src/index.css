@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #6366f1;
+    border-radius: 10px;
+  }
+  
+  /* Support for Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #6366f1 transparent;
+  }
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+}
